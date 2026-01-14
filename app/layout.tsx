@@ -12,9 +12,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "ASBIRD | FPV Learning Adventure",
   description: "Learn FPV drones from 0 to 1 with fun!",
-  icons: {
-    icon: '/logo.png',
-  }
+
 };
 
 export default function RootLayout({
