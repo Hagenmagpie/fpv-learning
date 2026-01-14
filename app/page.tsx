@@ -14,7 +14,7 @@ export default function Home() {
             从零开始的飞行之旅。加入我们，征服蓝天！
           </p>
           <Link
-            href="/docs"
+            href="/docs/flight"
             className="inline-flex items-center gap-2 bg-accent hover:bg-orange-600 text-white text-lg font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 shadow-lg group"
           >
             开始飞行 (Start Flying) <ArrowRight className="group-hover:translate-x-1 transition-transform" />
