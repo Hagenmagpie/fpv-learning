@@ -30,7 +30,7 @@ export default function Navbar() {
                             手册 (Docs)
                         </Link>
                         <a
-                            href="https://github.com/lishiguang/fpv-learning"
+                            href="https://github.com/hagenmagpie/fpv-learning"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-black transition-colors"
