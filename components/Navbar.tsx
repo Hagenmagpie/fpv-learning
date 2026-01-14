@@ -26,7 +26,7 @@ export default function Navbar() {
 
                     {/* Navigation Links */}
                     <div className="hidden md:flex items-center gap-8 font-bold text-slate-600">
-                        <Link href="/docs" className="hover:text-primary transition-colors">
+                        <Link href="/docs/simulator" className="hover:text-primary transition-colors">
                             手册 (Docs)
                         </Link>
                         <a
