@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import GithubSlugger from 'github-slugger';
+
 
 const contentDirectory = path.join(process.cwd(), 'content');
 
@@ -39,4 +41,18 @@ export function getAllPosts() {
         .filter((post): post is Post => post !== null)
         .sort((post1, post2) => ((post1.meta.order || 99) > (post2.meta.order || 99) ? 1 : -1));
     return posts;
+}
+
+
+
+export async function getHeadings(content: string) {
+    const slugger = new GithubSlugger();
+    const headingLines = content.match(/^#{2,4} .+/gm) || [];
+
+    return headingLines.map((line) => {
+        const text = line.replace(/^#{2,4} /, '');
+        const level = line.match(/^#{2,4}/)![0].length;
+        const id = slugger.slug(text);
+        return { text, id, level };
+    });
 }

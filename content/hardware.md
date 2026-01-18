@@ -33,3 +33,12 @@ order: 2
 - [ ] 能够控制飞机的定高巡航
 - [ ] 学会“协调转弯” (Coordinated Turn)
 
+## 地面站配置
+
+### Betaflight 配置
+
+![Betaflight Configuration](/images/hardware/beta-image.png)
+
+### ELRS 配置
+
+
